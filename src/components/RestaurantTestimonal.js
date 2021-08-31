@@ -2,7 +2,7 @@ import React from "react";
 
 function RestaurantTestimonal() {
   return (
-    <div className="">
+    <div className="p-8">
       <div className="grid grid-cols-2">
         <div className="mt-20">
           <p className="font-bold ">Restautrant Testimonial</p>
