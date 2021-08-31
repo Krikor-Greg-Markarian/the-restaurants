@@ -29,7 +29,7 @@ function Navbar(props) {
         search
       </ul>
       <button className="text-white bg-red-400 rounded-full px-4 py-2">
-        Login
+        Login.
       </button>
     </nav>
   );
