@@ -54,7 +54,7 @@ function App() {
           type="text"
           name=""
           id=""
-          className="rounded-full px-2 py-2 inline border-2 text-center ml-12 w-64"
+          className="rounded-full px-2 py-2 inline border-2 text-center ml-12 w-64 focus:outline-none"
         />
         <p className="text-red-700 rounded-full bg-red-100 px-4 py-2 inline font-bold float-right">
           Filter
