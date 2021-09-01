@@ -81,7 +81,8 @@ function App() {
         </ul>
       </section>
 
-      <section className="mt-8 container mx-auto">
+      <section className="mt-8 container mx-auto sm:w-full md:w-2/3 lg:w-1/2">
+      
         <Foodprice />
         <Foodprice />
         <Foodprice />
