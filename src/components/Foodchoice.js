@@ -3,7 +3,7 @@ import React from "react";
 function Foodchoice() {
   return (
     <div className = "container mx-auto">
-      <div className="ml-12 mr-12">
+      <div className="ml-4 mr-4 w-auto">
         <div className="mt-5 rounded-lg bg-red-100 p-4">
           <p className="font-bold mt-4">Cheese Stuffed Burgers</p>
           <p className="text-gray-500 mt-4 mb-4">
