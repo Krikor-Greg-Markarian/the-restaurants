@@ -7,6 +7,15 @@ import Foodchoice from "./components/Foodchoice";
 import Foodprice from "./components/Foodprice";
 import RestaurantTestimonal from "./components/RestaurantTestimonal";
 import Footer from "./components/Footer";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaPlus,
+  FaGooglePlay,
+  FaApple,
+  
+} from "react-icons/fa";
 
 function App() {
   return (
@@ -14,62 +23,65 @@ function App() {
       <section>
         <Top />
       </section>
-      <section className="pt-40 relative top-12">
+      <section className="pt-40 ">
         <Restaurantbg />
       </section>
-      <section className="absolute mt-1">
+      <section className="w-100 container mx-auto -mb-32 rounded-lg ">
         <Info />
       </section>
 
       <section>
         <div className="mt-40">
-          <p className="font-bold text-2xl inline">Restaurant Promo</p>
-          <p className="text-gray-400 inline ml-20">Countdown:</p>
-          <p className="text-red-500 inline ml-2">23</p>
-          <p className="text-red-300 inline text-xs">Hours</p>
-          <p className="text-red-500 inline ml-2">13</p>
-          <p className="text-red-300 inline text-xs">Minutes</p>
+          <p className="font-bold text-2xl inline ml-12">Restaurant Promo</p>
+          <div className="float-right mr-20">
+            <p className="text-gray-400 inline ml-20">Countdown:</p>
+            <p className="text-red-500 inline ml-2">23</p>
+            <p className="text-red-300 inline text-xs">Hours</p>
+            <p className="text-red-500 inline ml-2">13</p>
+            <p className="text-red-300 inline text-xs">Minutes</p>
+          </div>
         </div>
         <div className="grid grid-cols-2">
           <Foodchoice />
           <Foodchoice />
         </div>
       </section>
-      <section className="mt-12">
-        <p className="font-bold inline">Recommended Food</p>
+
+      <section className="mt-12 container mx-auto">
+        <p className="font-bold text-2xl inline">Recommended Food</p>
         <input
           placeholder="Search Food..."
           type="text"
           name=""
           id=""
-          className="rounded-full px-2 py-2 inline border-2 text-center ml-12"
+          className="rounded-full px-2 py-2 inline border-2 text-center ml-12 w-64"
         />
         <p className="text-red-700 rounded-full bg-red-100 px-4 py-2 inline font-bold float-right">
           Filter
         </p>
-        <ul className="container mx-auto mt-12">
-          <li className="bg-red-200  rounded-full inline px-4">
+        <ul className="container mx-auto mt-12 text-gray-600 font-bold">
+          <li className="bg-red-200  rounded-full inline px-6 py-2 ">
             <a href="#">All</a>
           </li>
-          <li className="hover:bg-red-200 rounded-full inline px-4">
+          <li className="hover:bg-red-200 rounded-full inline px-6 py-2">
             <a href="#">Pizza</a>
           </li>
-          <li className="hover:bg-red-200 rounded-full inline px-4">
+          <li className="hover:bg-red-200 rounded-full inline px-6 py-2">
             <a href="#">Asian</a>
           </li>
-          <li className="hover:bg-red-200 rounded-full inline px-4">
+          <li className="hover:bg-red-200 rounded-full inline px-6 py-2">
             <a href="#">Drink</a>
           </li>
-          <li className="hover:bg-red-200 rounded-full inline px-4">
+          <li className="hover:bg-red-200 rounded-full inline px-6 py-2">
             <a href="#">Salad</a>
           </li>
-          <li className="hover:bg-red-200 rounded-ful inline px-4l">
+          <li className="hover:bg-red-200 rounded-full inline px-6 py-2">
             <a href="#">Burger</a>
           </li>
         </ul>
       </section>
 
-      <section className="mt-8">
+      <section className="mt-8 container mx-auto">
         <Foodprice />
         <Foodprice />
         <Foodprice />
@@ -80,12 +92,21 @@ function App() {
         <RestaurantTestimonal />
       </section>
 
-      <section className="mt-30">
+      <section className="mt-30 container mx-auto">
         <p className="text-red-300 inline font-bold text-2xl">Food</p>
         <p className="text-yellow-300 inline font-bold text-2xl">Sense</p>
 
         <Footer />
       </section>
+
+      
+
+
+   
+
+
+
+
     </div>
   );
 }
