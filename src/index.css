@@ -12,3 +12,16 @@
   height: 40vh;
 
 }
+
+.girl-icecream{
+  background-image: url("https://cdn.pixabay.com/photo/2020/09/15/23/09/ice-cream-5574910_960_720.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+
+}
+
+body{
+  background-color: #F8F8F8;
+}
