@@ -1,4 +1,6 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
 
 function Footer(props) {
   return (
@@ -92,23 +94,24 @@ function Footer(props) {
               Our Social Media
             </a>
           </li>
-          <li>
-            <a href="#" className="text-gray-500  ">
-              facebook
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-500 mt-6  ">
-              insta
-            </a>
-          </li>
-          <li>
+
+          <IconContext.Provider value={{ color: "blue" }}>
+            <li>
+              <a href="#">
+                <FaFacebookF className="inline" />
+                <FaInstagram className="inline ml-3" />
+                <FaTwitter className="inline ml-4" />
+              </a>
+            </li>
+          </IconContext.Provider>
+
+          <li className="mt-6">
             <a href="#" className="text-black mt-6 font-bold">
               Download App
             </a>
           </li>
           <li>
-            <div className = "grid grid-cols-2 mr-8">
+            <div className="grid grid-cols-2 mr-8">
               <button className="bg-black text-white rounded-full px-2 py-1 inline-block">
                 Google Play
               </button>
