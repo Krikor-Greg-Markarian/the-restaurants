@@ -2,8 +2,8 @@ import React from 'react'
 
 function Restaurantbg() {
     return (
-      <div>
         <div className={"restaurant"}>
+            <div className = "container mx-auto">
           <p className="text-5xl text-center text-white transform translate-y-16">
             The Mama Restaurant
           </p>
