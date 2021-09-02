@@ -14,8 +14,26 @@ import {
   FaPlus,
   FaGooglePlay,
   FaApple,
-  
 } from "react-icons/fa";
+
+const object = {
+  data: [
+    {
+      title: "Cheese Stuffed Burgers",
+      subtitle: "Lorem ipsum dolor sit amet consectetur dipisicing elit.",
+      newprice: "$8.99",
+      oldprice: "9.99",
+      button: "Order Now",
+    },
+    {
+      title: "Cheese Stuffed Burgers",
+      subtitle: "Lorem ipsum dolor sit amet consectetur dipisicing elit.",
+      newprice: "$8.99",
+      oldprice: "9.99",
+      button: "Order Now",
+    },
+  ],
+};
 
 function App() {
   return (
@@ -41,9 +59,23 @@ function App() {
             <p className="text-red-300 inline text-xs">Minutes</p>
           </div>
         </div>
-        <div className="grid grid-cols-2">
-          <Foodchoice />
-          <Foodchoice />
+
+
+        <div className="grid grid-cols-2 container mx-auto lg:w-3/5">
+          {object.data.map((item, idx) => (
+            <Foodchoice
+              key={idx}
+              title={item.title}
+              subtitle={item.subtitle}
+              newprice={item.newprice}
+              oldprice={item.oldprice}
+              button={item.button}
+            />
+          ))}
+          
+
+
+          
         </div>
       </section>
 
@@ -82,7 +114,6 @@ function App() {
       </section>
 
       <section className="mt-8 container mx-auto sm:w-full md:w-2/3 lg:w-1/2">
-      
         <Foodprice />
         <Foodprice />
         <Foodprice />
@@ -99,15 +130,6 @@ function App() {
 
         <Footer />
       </section>
-
-      
-
-
-   
-
-
-
-
     </div>
   );
 }
