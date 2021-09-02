@@ -178,6 +178,16 @@ function Footer(props) {
           <FaPlus className="text-red-600" />
         </div>
       </div> */}
+
+      <div className = " border-t-2 p-4 text-gray-500 text-xs">
+        <p className = "inline ">Copyright &copy; 2020 Foodsense Food delivery</p>
+
+        <div className  = "float-right">
+        <p className = "inline ml-3">Privacy Policy</p>
+        <p className = "inline ml-3">Cookie Policy</p>
+        <p className = "inline ml-3">Term &#38; Services</p>
+        </div>
+      </div>
     </div>
   );
 }
